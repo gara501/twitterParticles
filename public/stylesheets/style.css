@@ -1,0 +1,24 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#canvas {
+  display: none;
+}
+.particles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 500px;
+}
+
+.particle {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+.particle:hover {
+  background-color: rgb(255, 0, 0) !important;
+}

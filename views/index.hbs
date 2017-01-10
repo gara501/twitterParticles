@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+{{#if tweets}}
+<div class="container">
+  <input type="text" class="username" />
+  <img class="avatar" src={{avatar}} width="100"  />
+  <div class="particles">
+  </div>
+  <canvas id="canvas"></canvas>
+</div>
+<ul>
+  {{#each tweets }}
+  <img src={{this.user.profile_image_url}} />
+  
+  <li>{{ this.text }}</li>
+  {{/each }}
+</ul>
+<script src="javascripts/particles.js"></script>
+<script>
+  window.setTimeout(Particles.init(), 5000);
+</script> 
+{{/if}}
